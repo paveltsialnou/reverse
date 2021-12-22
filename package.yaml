@@ -1,0 +1,40 @@
+---
+author:              Pavel Tsialnou
+copyright:           (c) 2021 Pavel Tsialnou
+dependencies:
+  - base >= 4.7 && < 5
+  - bytestring
+  - cmdargs
+description:         Please see the README on GitHub at <https://github.com/paveltsialnou/reverse#README.md>
+executables:
+  reverse:
+    dependencies:
+      - reverse
+    ghc-options:
+      - -rtsopts
+      - -threaded
+      - -with-rtsopts=-N
+    main:                Main.hs
+    source-dirs:         app
+extra-source-files:
+  - README.md
+library:
+  source-dirs: src
+license:             MIT
+maintainer:          paveltsialnou@icloud.com
+name:                reverse
+tests:
+  test:
+    dependencies:
+      - directory
+      - QuickCheck
+      - quickcheck-instances
+      - reverse
+    ghc-options:
+      - -main-is Test
+      - -rtsopts
+      - -threaded
+      - -with-rtsopts=-N
+    main:                QC.hs
+    source-dirs:         test
+version:             0.1.0.0
