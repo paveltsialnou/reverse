@@ -41,5 +41,5 @@ main = defaultMain
 
  - Document it
 
-[1]: https://docs.haskellstack.org/en/stable/install_and_upgrade/ "Install/Upgrade - The Haskell Tool Stack"
-[2]: https://docs.haskellstack.org/en/stable/README/ "The Haskell Tool Stack"
+[1]: https://docs.haskellstack.org/en/stable/#how-to-install-stack "How to install Stack"
+[2]: https://docs.haskellstack.org/en/stable/ "The Haskell Tool Stack"
